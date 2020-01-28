@@ -3,7 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'ngx-footer',
   styleUrls: ['./footer.component.scss'],
-  template: ``,
+  template: `
+    <span class="created-by">Created by <b><a href="https://github.com/JackWolfskind/pile.io" target="_blank">JackWolfskind</a></b> 2020</span>
+    <div class="socials">
+    </div>
+  `,
 })
 export class FooterComponent {
 }
