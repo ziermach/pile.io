@@ -1,6 +1,8 @@
 # Created by https://www.gitignore.io/api/angular
 # Edit at https://www.gitignore.io/?templates=angular
 
+src/app/pages/dashboard/api-key.ts
+
 ### Angular ###
 ## Angular ##
 # compiled output

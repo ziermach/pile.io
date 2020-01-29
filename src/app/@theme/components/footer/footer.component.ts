@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'ngx-footer',
   styleUrls: ['./footer.component.scss'],
   template: `
-    <span class="created-by">Created by <b><a href="https://github.com/JackWolfskind/pile.io" target="_blank">JackWolfskind</a></b> 2020</span>
+    <span class="created-by">Created by <b><a href="https://github.com/JackWolfskind/pile.io" target="_blank">
+    JackWolfskind</a></b> 2020</span>
     <div class="socials">
     </div>
   `,

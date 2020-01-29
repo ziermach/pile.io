@@ -136,6 +136,41 @@
           }
         }
       }
+    },
+    "angular-imdb-client": {
+      "projectType": "library",
+      "root": "projects/angular-imdb-client",
+      "sourceRoot": "projects/angular-imdb-client/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-imdb-client/tsconfig.lib.json",
+            "project": "projects/angular-imdb-client/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-imdb-client/src/test.ts",
+            "tsConfig": "projects/angular-imdb-client/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-imdb-client/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-imdb-client/tsconfig.lib.json",
+              "projects/angular-imdb-client/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-admin-demo",
